@@ -1,0 +1,66 @@
+*::before,
+*::after,
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+// ///////Font Family Typograph set-up//////
+
+// Font Family
+$-ff: 'Bai Jamjuree', sans-serif;
+
+// Body Font Size
+$-fs-header: 4.6rem;
+$-fs-paragraphy: 1.8rem;
+
+// Font Weights
+$-fw400: 400;
+$-fw600: 600;
+
+
+// /////////////Color Variables//////////////
+
+// Primary
+
+$-Strong-Cyan: hsl(171, 66%, 44%);
+$-Light-Blue: hsl(233, 100%, 69%);
+
+// Neutral
+
+$-Dark-Grayish-Blue: hsl(210, 10%, 33%);
+$-Grayish-Blue: hsl(201, 11%, 66%);
+
+
+//  /////////////Body
+body{
+  width: 100%;
+  height: 100vw;
+}
+
+// //////////////Header 
+header{
+  width: 100%;
+  background-image: url(./images/bg-header-desktop.png);
+
+  // Header Logo
+  #img-logo{
+    margin: auto;
+    width: 125px;
+    display: block;
+    height: auto;
+  }
+
+    #h1-header{
+    font-size: $-fs-header;
+    font-weight: $-fw600;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+}
