@@ -17,12 +17,13 @@ $-ff: 'Bai Jamjuree', sans-serif;
 
 // Body Font Size
 $-fs-header: 4.6rem;
+$-fs-h2: 3.6rem;
+$-fs-h3: 2.4rem;
 $-fs-paragraphy: 1.8rem;
 
 // Font Weights
 $-fw400: 400;
 $-fw600: 600;
-
 
 // /////////////Color Variables//////////////
 
@@ -30,6 +31,8 @@ $-fw600: 600;
 
 $-Strong-Cyan: hsl(171, 66%, 44%);
 $-Light-Blue: hsl(233, 100%, 69%);
+$-white: hsla(0, 0%, 100%, 1);
+
 
 // Neutral
 
@@ -41,26 +44,148 @@ $-Grayish-Blue: hsl(201, 11%, 66%);
 body{
   width: 100%;
   height: 100vw;
+
+  // H1 Setting
+  h1{
+    font-size: $-fs-header;
+    font-weight: $-fw600;
+    font-family: $-ff;
+    color: $-Dark-Grayish-Blue;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    max-width: 90%;
+    margin-top: .56em;
+  }
+
+  // H2 Setting
+  h2{
+    font-size: $-fs-h2;
+    color: $-Dark-Grayish-Blue;
+    font-weight: $-fw600;
+    margin: auto;
+    text-align: center;
+    max-width: 90%;
+    margin-top: .56em;
+  }
+  // H3 Setting
+  h3{
+    font-size: $-fs-h3;
+    font-family: $-ff;
+    color: $-Dark-Grayish-Blue;
+    font-weight: $-fw600;
+    margin: auto;
+    text-align: center;
+  }
+  // Paragraphy Setting
+  p{
+    font-family: $-ff;
+    font-size: $-fs-paragraphy;
+    color: $-Grayish-Blue;
+    font-weight: $-fw400;
+    max-width: 66%;
+    text-align: center;
+    margin: auto;
+  }
 }
 
 // //////////////Header 
 header{
   width: 100%;
+  height: 36.5em;
   background-image: url(./images/bg-header-desktop.png);
+  background-repeat: no-repeat;
 
   // Header Logo
   #img-logo{
     margin: auto;
-    width: 125px;
+    width: 12.5em;
     display: block;
     height: auto;
-  }
-
-    #h1-header{
-    font-size: $-fs-header;
-    font-weight: $-fw600;
-    width: 100%;
-    margin: auto;
-    text-align: center;
+    padding-top: 14.6em;
   }
 }
+
+// Main Section
+main{
+  // Buttons
+  .buttons{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    
+    button{
+      border: none;
+      width: 22.7em;
+      height: 5.6em;
+      border-radius: 100px;
+      color: $-white;
+    }
+
+    .ios{
+      background-color: $-Strong-Cyan;
+    }
+    .mac{
+      background-color: $-Light-Blue;
+    }
+  }
+  #flex-middle{
+    display: flex;
+  }
+}
+
+// Middle Section
+
+
+
+// Workflow Flex
+#workflow-flex{
+  display: flex;
+  .icon-text{
+    margin: auto;
+    display: block;
+  }
+}
+
+// company-logo-flex
+#company-logo-flex{
+  display: flex;
+  justify-content: space-between;
+
+  .icon-logo{
+    height: 4.9em;
+  }
+}
+
+
+// bottom-info
+
+
+
+
+// Footer
+footer{
+  background-color: $-Grayish-Blue;   
+
+  #footer-logo{
+    width: 5.5em;
+    height: auto;
+    display: block; 
+  }
+  #grid-div{
+    a{
+      font-family: $-ff;
+      font-size: $-fs-paragraphy;
+      color: $-Grayish-Blue;
+      font-weight: $-fw400;
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+
+
+
