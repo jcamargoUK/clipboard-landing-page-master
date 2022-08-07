@@ -37,7 +37,8 @@ $-white: hsla(0, 0%, 100%, 1);
 // Neutral
 
 $-Dark-Grayish-Blue: hsl(210, 10%, 33%);
-$-Grayish-Blue: hsl(201, 11%, 66%);
+$-Grayish-Blue: hsla(201, 11%, 66%, 1);
+$-footer-color: #F5F5F5;
 
 
 //  /////////////Body
@@ -55,7 +56,7 @@ body{
     margin: auto;
     text-align: center;
     max-width: 90%;
-    margin-top: .56em;
+    margin-top: 1em;
   }
 
   // H2 Setting
@@ -66,7 +67,8 @@ body{
     margin: auto;
     text-align: center;
     max-width: 90%;
-    margin-top: .56em;
+    margin-top: 15rem;
+    margin-bottom: 1.5rem;
   }
   // H3 Setting
   h3{
@@ -83,16 +85,16 @@ body{
     font-size: $-fs-paragraphy;
     color: $-Grayish-Blue;
     font-weight: $-fw400;
-    max-width: 66%;
     text-align: center;
     margin: auto;
+    line-height: 3rem;
   }
 }
 
 // //////////////Header 
 header{
   width: 100%;
-  height: 36.5em;
+  height: 34.5em;
   background-image: url(./images/bg-header-desktop.png);
   background-repeat: no-repeat;
 
@@ -102,25 +104,37 @@ header{
     width: 12.5em;
     display: block;
     height: auto;
-    padding-top: 14.6em;
+    padding-top: 8.6em;
   }
 }
 
 // Main Section
 main{
+
+  #first-paragraphy{
+    max-width: 65%;
+  }
+
+  #second-paragraphy{
+    max-width: 67%;
+  }
+
   // Buttons
   .buttons{
-    width: 80%;
+    width: 45%;
     display: flex;
     margin: auto;
+    margin-top: 4.8rem;
     justify-content: space-evenly;
     
     button{
       border: none;
-      width: 22.7em;
-      height: 5.6em;
+      width: 11.7em;
+      height: 2.6em;
       border-radius: 100px;
       color: $-white;
+      font-family: $-ff;
+      font-size: $-fs-paragraphy;
     }
 
     .ios{
@@ -130,21 +144,64 @@ main{
       background-color: $-Light-Blue;
     }
   }
+
+  // Flex Middle
   #flex-middle{
     display: flex;
+    margin-top: 8rem;
+
+    img{
+      max-width: 70rem;
+      margin-left: -8rem;
+    }
+    #flex-info-group{
+      max-width: 35rem;
+      margin-left: 10rem;
+      margin-top: 10rem;
+      .info-group{
+        h3{
+          text-align: left;
+        }
+        p{
+          text-align: left;
+          font-size: 1.6rem;
+        }
+        margin-bottom: 3.6rem;
+      }
+    }
   }
 }
 
 // Middle Section
-
+#middle-section{
+  #bottom-h2{
+    margin-top: 10.1rem;
+  }
+  p{
+    max-width: 70%;
+    margin-bottom: 11rem;
+  }
+  img{
+    display: block;
+    margin: auto;
+  }
+}
 
 
 // Workflow Flex
 #workflow-flex{
   display: flex;
-  .icon-text{
-    margin: auto;
-    display: block;
+  margin-bottom: 15rem;
+  .info-group{
+    max-width: 33%;
+    .icon-text{
+      margin: auto;
+      display: block;
+      height: 3.6rem;
+    }
+    p{
+      max-width: 84%;
+    }
   }
 }
 
@@ -152,7 +209,8 @@ main{
 #company-logo-flex{
   display: flex;
   justify-content: space-between;
-
+  max-width: 1112px;
+  margin: auto;
   .icon-logo{
     height: 4.9em;
   }
@@ -160,27 +218,50 @@ main{
 
 
 // bottom-info
-
+#bottom-info{
+  margin-bottom: 15rem;
+  p{
+    max-width: 70%;
+  }
+}
 
 
 
 // Footer
 footer{
-  background-color: $-Grayish-Blue;   
+  background-color: $-footer-color;  
+  height: 15em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
 
   #footer-logo{
     width: 5.5em;
-    height: auto;
+    height: 5.5em;
     display: block; 
+    margin-left: 8%;
   }
   #grid-div{
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 6%;
+    width: 50em;
     a{
       font-family: $-ff;
       font-size: $-fs-paragraphy;
       color: $-Grayish-Blue;
       font-weight: $-fw400;
       text-decoration: none;
+      
     }
+  }
+  #social-logos{
+    display: flex;
+    justify-content: space-between;
+    width: 17em;
+    margin-left: 25em;
   }
 }
 
