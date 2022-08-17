@@ -359,4 +359,75 @@ footer{
 }
 
 
+@media only screen and (max-width: 375px) {
 
+  main{
+
+    #h1-header{
+      max-width: 74%;
+    }
+
+    #first-paragraphy{
+      margin-top: 7em;
+      max-width: 90%;
+    }
+      
+    #second-paragraphy{
+      max-width: 90%;
+    }
+
+    #flex-middle{
+      #mid-img{
+        max-width: 35em;
+      }
+    }
+    #middle-section{
+      #image-devices{
+        max-width: 35rem;
+      }
+    }
+
+    #workflow-flex{
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 3em;
+
+      .info-group{
+        max-width: 80%;
+        margin-bottom: 2em;
+      }
+    }
+    #company-logo-flex{
+      grid-template-columns: repeat(1, 1fr);
+
+      .icon-logo{
+        width: 17.5em;
+        margin-bottom: 3em;
+      }
+    }
+
+    footer{
+      flex-direction: column;
+      height: 42em;
+
+      #footer-logo{
+        margin: auto;
+        margin-top: 3em;
+        margin-bottom: 3em;
+      }
+
+      #grid-div{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        text-align: center;
+        margin: auto;
+      }
+      #social-logos{
+        margin-top: 2em;
+        margin-bottom: 2em;
+      }
+    }
+  }
+
+  
+}

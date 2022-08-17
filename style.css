@@ -262,4 +262,57 @@ footer #social-logos {
     margin-left: 1em;
     margin-right: 1em;
   }
+}
+@media only screen and (max-width: 375px) {
+  main #h1-header {
+    max-width: 74%;
+  }
+  main #first-paragraphy {
+    margin-top: 7em;
+    max-width: 90%;
+  }
+  main #second-paragraphy {
+    max-width: 90%;
+  }
+  main #flex-middle #mid-img {
+    max-width: 35em;
+  }
+  main #middle-section #image-devices {
+    max-width: 35rem;
+  }
+  main #workflow-flex {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
+  }
+  main #workflow-flex .info-group {
+    max-width: 80%;
+    margin-bottom: 2em;
+  }
+  main #company-logo-flex {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  main #company-logo-flex .icon-logo {
+    width: 17.5em;
+    margin-bottom: 3em;
+  }
+  main footer {
+    flex-direction: column;
+    height: 42em;
+  }
+  main footer #footer-logo {
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+  main footer #grid-div {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  main footer #social-logos {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
 }/*# sourceMappingURL=style.css.map */
