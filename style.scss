@@ -265,8 +265,98 @@ footer{
   }
 }
 
+// Screen Max 768px
 
+@media only screen and (max-width: 768px) {
 
+  main{
+
+    #h1-header{
+      max-width: 74%;
+    }
+
+    #first-paragraphy{
+      margin-top: 3em;
+    }
+
+    .buttons{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    button{
+      margin-top: 2em;
+    }
+
+    #h2{
+      margin-top: 2em;
+    }
+
+    #flex-middle{
+      flex-direction: column;
+        align-items: center;
+
+        #mid-img{
+          display: block;
+          margin: auto;
+        } 
+
+        #flex-info-group{
+          margin: auto;
+          margin-top: 8em;  
+          
+          .info-group{
+            h3, p{
+              text-align: center;
+            }       
+          }
+        }   
+    }
+    #middle-section{
+      h2{
+        margin-top: 2em;
+      }
+
+      #image-devices{
+        max-width: 70rem;
+      }
+    
+      #bottom-h2{
+        margin-top: 1rem;
+      }
+    }
+
+    #company-logo-flex{
+      display: grid;
+      grid-gap: 4em;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      margin: auto;
+      
+
+      .icon-logo{
+        margin: auto;
+        display: block;
+        width: 14.5em;
+        height: auto;
+      }
+    }
+
+    footer{
+      #footer-logo{
+        margin-left: 2%;
+      }
+
+      #grid-div{
+        margin-left: 10%;
+      }
+      #social-logos{
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+    }
+  }  
+}
 
 
 

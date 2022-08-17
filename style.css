@@ -196,4 +196,70 @@ footer #social-logos {
   justify-content: space-between;
   width: 17em;
   margin-left: 25em;
+}
+
+@media only screen and (max-width: 768px) {
+  main #h1-header {
+    max-width: 74%;
+  }
+  main #first-paragraphy {
+    margin-top: 3em;
+  }
+  main .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  main button {
+    margin-top: 2em;
+  }
+  main #h2 {
+    margin-top: 2em;
+  }
+  main #flex-middle {
+    flex-direction: column;
+    align-items: center;
+  }
+  main #flex-middle #mid-img {
+    display: block;
+    margin: auto;
+  }
+  main #flex-middle #flex-info-group {
+    margin: auto;
+    margin-top: 8em;
+  }
+  main #flex-middle #flex-info-group .info-group h3, main #flex-middle #flex-info-group .info-group p {
+    text-align: center;
+  }
+  main #middle-section h2 {
+    margin-top: 2em;
+  }
+  main #middle-section #image-devices {
+    max-width: 70rem;
+  }
+  main #middle-section #bottom-h2 {
+    margin-top: 1rem;
+  }
+  main #company-logo-flex {
+    display: grid;
+    grid-gap: 4em;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin: auto;
+  }
+  main #company-logo-flex .icon-logo {
+    margin: auto;
+    display: block;
+    width: 14.5em;
+    height: auto;
+  }
+  main footer #footer-logo {
+    margin-left: 2%;
+  }
+  main footer #grid-div {
+    margin-left: 10%;
+  }
+  main footer #social-logos {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
 }/*# sourceMappingURL=style.css.map */
